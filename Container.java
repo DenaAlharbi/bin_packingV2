@@ -1,7 +1,6 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 
-public class Container{
+public class Container {
     int sum;
     int max;
 
@@ -19,10 +18,13 @@ public class Container{
             sum += item;
         }
         if (sum + itemWeight <= max) {
+            containWeights.add(itemWeight);
             return true;
         }
         return false;
     }
 
 
-}
+
+
+    }
